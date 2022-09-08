@@ -107,6 +107,7 @@ class HBNBCommand(cmd.Cmd):
 
             all_obj_str = ", ".join(str_list)
             print(f'[{all_obj_str}]')
+            return False
         if command[0] not in classes:
             print("** class doesn't exist **")
             return False
